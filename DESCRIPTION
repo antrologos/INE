@@ -1,0 +1,16 @@
+Package: INE
+Type: Package
+Title: Educational Inequalities and Comparative Advantages
+Version: 0.1.0
+Author: Rogerio J Barbosa
+Maintainer: Rogerio J Barbosa <rogerio.barbosa@iesp.uerj.br>
+Description: [under construction].
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: data.table, pracma, mvQuad, ks
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/antrologos/INE/
+BugReports: https://github.com/antrologos/INE/issues
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
