@@ -13,6 +13,18 @@
 #' @export
 make_INE_meanEffect = function(reg, income_var, performance_var){
 
+        if(!"glm" %in% class(reg)){
+                stop("reg must be a glm object")
+        }
+
+        if(!class(income_var) == "character"|!class(performance_var) == "character"){
+                stop("income_var and performance_var must be characters, both with length 1")
+        }
+
+        if(length(income_var) != 1|length(performance_var) != 1){
+                stop("income_var and performance_var must be characters, both with length 1")
+        }
+
         vars_of_interest = c(income_var, performance_var)
         data = model.frame(reg)
 

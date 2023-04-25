@@ -15,6 +15,11 @@
 #' @import ks
 #' @import mvQuad
 #' @export
+
+reg
+income_var = "ln_renda"
+performance_var = "desem"
+
 make_INE = function(reg, income_var, performance_var){
 
         if(!"glm" %in% class(reg)){
@@ -25,7 +30,7 @@ make_INE = function(reg, income_var, performance_var){
                 stop("income_var and performance_var must be characters, both with length 1")
         }
 
-        if(!length(income_var) != 1|!length(performance_var) != 1){
+        if(length(income_var) != 1|length(performance_var) != 1){
                 stop("income_var and performance_var must be characters, both with length 1")
         }
 
