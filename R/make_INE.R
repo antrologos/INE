@@ -15,11 +15,6 @@
 #' @import ks
 #' @import mvQuad
 #' @export
-
-reg
-income_var = "ln_renda"
-performance_var = "desem"
-
 make_INE = function(reg, income_var, performance_var){
 
         if(!"glm" %in% class(reg)){

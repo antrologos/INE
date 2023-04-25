@@ -12,5 +12,5 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/antrologos/INE/
 BugReports: https://github.com/antrologos/INE/issues
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
